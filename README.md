@@ -9,4 +9,6 @@ gradle init \
   --no-split-project  \
   --java-version 17
 
+https://www.geeksforgeeks.org/java-net-inetaddress-class-in-java/
+
 
