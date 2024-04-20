@@ -13,14 +13,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 class AppTest {
     ObjectMapper objectMapper = new ObjectMapper();
 
-    @Test void nslookup()throws IOException  {
+    @Test void nslookup()throws IOException,UnknownHostException  {
       App classUnderTest = new App();
       try {
           File file = new File("src/main/resources/config.json");
           Config config = objectMapper.readValue(file, Config.class);
           String url = config.getUrl();
-          String ip = classUnderTest.getIP(url);
-          assertEquals(ip, "142.250.65.100");
+          String hostName = url.replace("https://","");
+          String ip = classUnderTest.getIP(hostName);
+          System.out.println(hostName);
+          System.out.println(hostName);
+          assertEquals(hostName,"www.google.com" );
+          assertEquals(ip, "172.217.7.36");
        } catch (UnknownHostException uhe) {
            uhe.printStackTrace();
        }
