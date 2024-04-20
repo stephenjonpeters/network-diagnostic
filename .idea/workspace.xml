@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working">
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713632379011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713632992270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713632992270</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713633009921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713633009921</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
