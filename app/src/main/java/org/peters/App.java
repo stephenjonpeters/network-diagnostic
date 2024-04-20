@@ -9,14 +9,13 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
-        try {
-            InetAddress address = InetAddress.getByName("www.google.com");
-            System.out.println("InetAddress of Named Host : " + address);
-        } catch (UnknownHostException uhe) {
-            uhe.printStackTrace();
-        }
     }
+    public String getIP(String hostName) throws UnknownHostException{
+        InetAddress address = InetAddress.getByName(hostName);
+        System.out.println("InetAddress of Named Host : " + address);
+        return address.getHostAddress();
 
+    }
 }
 
 

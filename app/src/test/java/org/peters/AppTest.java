@@ -11,9 +11,14 @@ import java.util.*;
 
 class AppTest {
 
-        @Test void appHasAGreeting() {
+        @Test void nslookup() {
             App classUnderTest = new App();
-           // assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+            try {
+                String ip = classUnderTest.getIP("www.google.com");
+                assertEquals(ip, "142.250.65.100");
+            } catch (UnknownHostException uhe) {
+                uhe.printStackTrace();
+            }
         }
     }
 
