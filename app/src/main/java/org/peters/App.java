@@ -3,16 +3,8 @@
  */
 package org.peters;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class App {
 

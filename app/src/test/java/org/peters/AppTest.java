@@ -3,19 +3,20 @@
  */
 package org.peters;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import java.io.*;
-import java.net.*;
-import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Test;
+
+import java.io.File;
+import java.io.IOException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 class AppTest {
     ObjectMapper objectMapper = new ObjectMapper();
 
-    @Test void nslookup()throws IOException,UnknownHostException  {
+    @Test void nslookup()throws IOException{
       App classUnderTest = new App();
-      try {
           File file = new File("src/main/resources/config.json");
           Config config = objectMapper.readValue(file, Config.class);
           String url = config.getUrl();
@@ -23,19 +24,16 @@ class AppTest {
           String ip = classUnderTest.getIP(hostName);
           System.out.println(hostName);
           System.out.println(hostName);
-          assertEquals(hostName,"www.google.com" );
-          assertEquals(ip, "172.217.7.36");
-       } catch (UnknownHostException uhe) {
-           uhe.printStackTrace();
-       }
+          assertEquals(hostName,"www.dnsjava.org" );
+          assertEquals(ip, "3.33.152.147");
      }
 
-    @Test
-    void jsonParseConfig() throws IOException {
+    @Test void jsonParseConfig() throws IOException {
         File file = new File("src/main/resources/config.json");
         Config config = objectMapper.readValue(file, Config.class);
 
-        assertEquals(config.getUrl(),"https://www.google.com");
+        assertEquals(config.getUrl(),"https://www.dnsjava.org");
     }
+
     }
 
