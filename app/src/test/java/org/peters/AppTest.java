@@ -8,17 +8,30 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 class AppTest {
+    ObjectMapper objectMapper = new ObjectMapper();
 
-        @Test void nslookup() {
-            App classUnderTest = new App();
-            try {
-                String ip = classUnderTest.getIP("www.google.com");
-                assertEquals(ip, "142.250.65.100");
-            } catch (UnknownHostException uhe) {
-                uhe.printStackTrace();
-            }
-        }
+    @Test void nslookup()throws IOException  {
+      App classUnderTest = new App();
+      try {
+          File file = new File("src/main/resources/config.json");
+          Config config = objectMapper.readValue(file, Config.class);
+          String url = config.getUrl();
+          String ip = classUnderTest.getIP(url);
+          assertEquals(ip, "142.250.65.100");
+       } catch (UnknownHostException uhe) {
+           uhe.printStackTrace();
+       }
+     }
+
+    @Test
+    void jsonParseConfig() throws IOException {
+        File file = new File("src/main/resources/config.json");
+        Config config = objectMapper.readValue(file, Config.class);
+
+        assertEquals(config.getUrl(),"https://www.google.com");
+    }
     }
 

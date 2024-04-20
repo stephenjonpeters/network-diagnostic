@@ -7,15 +7,27 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
 public class App {
-    public static void main(String[] args) {
-    }
+
+
     public String getIP(String hostName) throws UnknownHostException{
         InetAddress address = InetAddress.getByName(hostName);
         System.out.println("InetAddress of Named Host : " + address);
         return address.getHostAddress();
 
     }
+
+    public static void main(String[] args) {
+    }
+
+
 }
 
 
