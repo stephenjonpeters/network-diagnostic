@@ -17,8 +17,8 @@ public class App {
 
     }
 
-    public String getPublicIP()throws UnknownHostException {
-        String systemipaddress = "";
+    public String getPublicIP(){
+        String systemipaddress;
         try
         {
             URL url_name = new URL("https://api.ipify.org");
