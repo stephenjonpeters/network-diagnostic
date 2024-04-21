@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AppTest {
 
 
-    @Test void jsonParseConfig() throws IOException {
+    @Test void jsonParseConfig() {
         Config config = new Config();
         String url = config.getUrl();
         String host = config.getHost();
@@ -25,9 +25,9 @@ class AppTest {
         assertEquals(host,"www.dnsjava.org");
     }
 
-    @Test void getPublicIP()throws IOException{
-        App classUnderTest = new App();
-        String ip = classUnderTest.getPublicIP();
+    @Test void getPublicIP() throws IOException {
+        App app = new App();
+        String ip = app.getPublicIP();
         System.out.println(ip);
         assertEquals(ip, "73.3.107.235");
     }
