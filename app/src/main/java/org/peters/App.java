@@ -33,6 +33,14 @@ public class App {
         return systemipaddress;
     }
 
+    public App(){
+        Config config = new Config();
+        String url = config.getUrl();
+        String host = config.getHost();
+        System.out.println(url);
+        System.out.println(host);
+    }
+
     public static void main(String[] args) {
     }
 

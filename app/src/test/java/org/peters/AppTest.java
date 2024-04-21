@@ -3,10 +3,10 @@
  */
 package org.peters;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
+
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,15 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AppTest {
 
-    ObjectMapper objectMapper = new ObjectMapper();
-
-    @Test void nslookup()throws IOException{
-      App classUnderTest = new App();
-     }
 
     @Test void jsonParseConfig() throws IOException {
-        File file = new File("src/main/resources/config.json");
-        Config config = objectMapper.readValue(file, Config.class);
+        Config config = new Config();
         String url = config.getUrl();
         String host = config.getHost();
         System.out.println(url);
