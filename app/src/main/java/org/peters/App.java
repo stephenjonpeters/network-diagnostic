@@ -5,7 +5,8 @@ package org.peters;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-
+import java.net.*;
+import java.io.*;
 public class App {
 
 
@@ -14,6 +15,22 @@ public class App {
         System.out.println("InetAddress of Named Host : " + address);
         return address.getHostAddress();
 
+    }
+
+    public String getPublicIP()throws UnknownHostException {
+        String systemipaddress = "";
+        try
+        {
+            URL url_name = new URL("https://api.ipify.org");
+            BufferedReader sc = new BufferedReader(new InputStreamReader(url_name.openStream()));
+            systemipaddress = sc.readLine().trim();
+        }
+        catch (Exception e)
+        {
+            systemipaddress = "Cannot Execute Properly";
+        }
+        System.out.println("Public IP Address: " + systemipaddress +"\n");
+        return systemipaddress;
     }
 
     public static void main(String[] args) {

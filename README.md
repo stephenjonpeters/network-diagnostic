@@ -11,4 +11,5 @@ gradle init \
 
 https://www.geeksforgeeks.org/java-net-inetaddress-class-in-java/
 
+https://www.geeksforgeeks.org/java-program-find-ip-address-computer/
 

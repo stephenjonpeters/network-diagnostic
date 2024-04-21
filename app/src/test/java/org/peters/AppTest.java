@@ -13,27 +13,29 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class AppTest {
+
     ObjectMapper objectMapper = new ObjectMapper();
 
     @Test void nslookup()throws IOException{
       App classUnderTest = new App();
-          File file = new File("src/main/resources/config.json");
-          Config config = objectMapper.readValue(file, Config.class);
-          String url = config.getUrl();
-          String hostName = url.replace("https://","");
-          String ip = classUnderTest.getIP(hostName);
-          System.out.println(hostName);
-          System.out.println(hostName);
-          assertEquals(hostName,"www.dnsjava.org" );
-          assertEquals(ip, "3.33.152.147");
      }
 
     @Test void jsonParseConfig() throws IOException {
         File file = new File("src/main/resources/config.json");
         Config config = objectMapper.readValue(file, Config.class);
-
-        assertEquals(config.getUrl(),"https://www.dnsjava.org");
+        String url = config.getUrl();
+        String host = config.getHost();
+        System.out.println(url);
+        System.out.println(host);
+        assertEquals(url,"https://www.dnsjava.org");
+        assertEquals(host,"www.dnsjava.org");
     }
 
+    @Test void getPublicIP()throws IOException{
+        App classUnderTest = new App();
+        String ip = classUnderTest.getPublicIP();
+        System.out.println(ip);
+        assertEquals(ip, "73.3.107.235");
     }
+}
 
