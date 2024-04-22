@@ -8,17 +8,15 @@ import java.net.InetAddress;
 public class Host {
 
     String hostName;
-    String ip;
-    String lookupIP;
-    Host() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        File file = new File("src/main/resources/config.json");
+    String IP;
+    String expectedIP;
+
+    Host(String hostName, String expectedIP ) {
+        this.hostName = hostName;
+        this.expectedIP = expectedIP;
         try {
-            Config config = objectMapper.readValue(file, Config.class);
-            this.hostName = config.getHostName();
-            this.ip = config.getIP();
             InetAddress address = InetAddress.getByName(hostName);
-            lookupIP = address.getHostAddress();
+            IP = address.getHostAddress();
         } catch (
                 IOException ioe) {
             ioe.printStackTrace();
@@ -26,6 +24,6 @@ public class Host {
     }
 
     public String getHostName(){ return this.hostName; }
-    public String getIP(){ return this.ip; }
-    public String getLookupIP(){ return this.lookupIP; }
+    public String getIP(){ return this.IP; }
+    public String getExpectedIP(){ return this.expectedIP; }
 }
