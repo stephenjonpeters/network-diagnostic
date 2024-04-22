@@ -22,20 +22,16 @@ public class App {
         System.out.println("Public IP Address: " + systemipaddress +"\n");
     }
 
-   static void getHost(){
-       Host host = new Host();
-       String hostName = host.getHostName();
-       String ip = host.getIP();
-       String lookupIP = host.getLookupIP();
-       System.out.println(hostName);
-       System.out.println(ip);
-       System.out.println(lookupIP);
-   }
 
 
-    public static void main(String[] args) {
-        getMyIP();
-        getHost();
+public static void main(String[] args) {
+   String hostName= "www.dnsjava.org";
+   String expectedIP = "3.33.152.147";
+   getMyIP();
+   Host host = new Host(hostName,expectedIP);
+   String ip = host.getIP();
+   System.out.println(hostName);
+   System.out.println(ip);
     }
 
 
