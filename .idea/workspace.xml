@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working" />
+    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/peters/DescribeInstances.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/network-diagnostic.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/network-diagnostic.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +42,30 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="network-diagnostic" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="network-diagnostic" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="network-diagnostic" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="network-diagnostic" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="network-diagnostic" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -98,10 +129,15 @@
     "Gradle.AppTest.testMainMethod.executor": "Run",
     "Gradle.Build network-diagnostic.executor": "Run",
     "Gradle.Tests in 'network-diagnostic.app.test'.executor": "Run",
+    "Gradle.network-diagnostic [assemble].executor": "Run",
+    "Gradle.network-diagnostic [buildDependents].executor": "Run",
     "Gradle.network-diagnostic [build].executor": "Run",
+    "Gradle.network-diagnostic [classes].executor": "Run",
     "Gradle.network-diagnostic [clean].executor": "Run",
+    "Gradle.network-diagnostic [dependencies].executor": "Run",
     "Gradle.network-diagnostic [testClasses].executor": "Run",
     "Gradle.network-diagnostic:app [:app:App.main()].executor": "Run",
+    "Gradle.network-diagnostic:app [build].executor": "Run",
     "Notification.DisplayName-DoNotAsk-JMeter_Notification": "JMeter_Notification",
     "Notification.DoNotAsk-JMeter_Notification": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -110,102 +146,130 @@
     "git-widget-placeholder": "#2 on dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/stevepeters/github/stephenjonpeters/network-diagnostic",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45402297",
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.AppTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.peters.App" />
-      <module name="network-diagnostic.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.peters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.network-diagnostic [dependencies]">
+    <configuration name="network-diagnostic [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;org.peters.AppTest&quot;" />
+            <option value="assemble" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testMainMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="network-diagnostic [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;org.peters.AppTest.testMainMethod&quot;" />
+            <option value="buildDependents" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'network-diagnostic.app.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="network-diagnostic [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":app:test" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="network-diagnostic [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="network-diagnostic [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.AppTest.testMainMethod" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.Tests in 'network-diagnostic.app.test'" />
+        <item itemvalue="Gradle.network-diagnostic [dependencies]" />
+        <item itemvalue="Gradle.network-diagnostic [build]" />
+        <item itemvalue="Gradle.network-diagnostic [assemble]" />
+        <item itemvalue="Gradle.network-diagnostic [buildDependents]" />
+        <item itemvalue="Gradle.network-diagnostic [classes]" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713791989312</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713792045921</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713792045921</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

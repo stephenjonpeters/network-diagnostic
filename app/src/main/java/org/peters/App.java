@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-public class App {
-    static void getMyIP() {
+class App {
+    private static void getMyIP() {
 
         String systemipaddress = "";
         try {

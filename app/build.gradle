@@ -17,10 +17,14 @@ repositories {
 
 dependencies {
     implementation libs.guava
-    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-core', version: '1.12.705'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-ec2', version: '1.12.705'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-elasticloadbalancing', version: '1.12.705'
+
+
     testImplementation libs.junit.jupiter
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
