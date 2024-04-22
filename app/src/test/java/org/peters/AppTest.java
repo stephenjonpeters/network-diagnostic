@@ -6,9 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AppTest {
 
+    String hostName = "www.dnsjava.org";
+    String expectedIP ="15.197.142.173";
+
     @Test void getHost() {
-        String hostName = "www.dnsjava.org";
-        String expectedIP = "3.33.152.147";
         Host host = new Host(hostName,expectedIP );
         String IP = host.getIP();
         assertEquals(expectedIP,IP);
@@ -16,7 +17,8 @@ class AppTest {
 
     @Test
     public void testMainMethod(){
-        App.main(new String[]{"www.dnsjava.org", "3.33.152.147"});
+        App.main(new String[]{hostName,expectedIP});
+
     }
 }
 
