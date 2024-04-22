@@ -13,3 +13,5 @@ https://www.geeksforgeeks.org/java-net-inetaddress-class-in-java/
 
 https://www.geeksforgeeks.org/java-program-find-ip-address-computer/
 
+https://stefanbirkner.github.io/system-rules/#SystemErrAndOutRule
+
