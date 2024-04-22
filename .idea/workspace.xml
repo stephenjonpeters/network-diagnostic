@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working" />
+    <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -55,6 +62,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -88,12 +102,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Gradle.Build network-diagnostic.executor": "Run",
+    "Gradle.Tests in 'network-diagnostic.app.test'.executor": "Run",
     "Gradle.network-diagnostic [build].executor": "Run",
     "Gradle.network-diagnostic [clean].executor": "Run",
     "Gradle.network-diagnostic [testClasses].executor": "Run",
+    "Gradle.network-diagnostic:app [:app:App.main()].executor": "Run",
     "Notification.DisplayName-DoNotAsk-JMeter_Notification": "JMeter_Notification",
     "Notification.DoNotAsk-JMeter_Notification": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/stevepeters/github/stephenjonpeters/network-diagnostic",
@@ -104,6 +122,28 @@
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.network-diagnostic [build]">
+    <configuration name="Tests in 'network-diagnostic.app.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="network-diagnostic [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,24 +210,11 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="network-diagnostic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="network-diagnostic" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.network-diagnostic [build]" />
+        <item itemvalue="Gradle.Tests in 'network-diagnostic.app.test'" />
         <item itemvalue="Gradle.network-diagnostic [clean]" />
-        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.network-diagnostic [testClasses]" />
       </list>
     </recent_temporary>
@@ -241,22 +268,51 @@
       <option name="project" value="LOCAL" />
       <updated>1713633009921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713647212294</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647212294</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713647372776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647372776</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713647406926</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647406926</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713709468540</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713709468540</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713746289280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713746289280</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gradle test working" />
     <option name="LAST_COMMIT_MESSAGE" value="gradle test working" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

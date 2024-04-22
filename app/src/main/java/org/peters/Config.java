@@ -1,9 +1,8 @@
 package org.peters;
 
 public class Config {
-    private String url;
-
-    public String getUrl(){
-        return this.url;
-    }
+    String hostName;
+    String ip;
+    public String getHostName(){ return this.hostName; }
+    public String getIP(){ return this.ip; }
 }
