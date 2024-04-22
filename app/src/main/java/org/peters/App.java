@@ -7,6 +7,9 @@ public class App {
         String hostName = host.getHostName();
         String ip = host.getIP();
         String lookupIP = host.getLookupIP();
+        System.out.println(hostName);
+        System.out.println(ip);
+        System.out.println(lookupIP);
     }
 
 
