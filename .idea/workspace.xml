@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01d42ace-a6f1-427e-9ed3-7c37fd442a20" name="Changes" comment="gradle test working">
-      <change afterPath="$PROJECT_DIR$/app/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/peters/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/peters/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/peters/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/peters/Host.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/org/peters/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713788482028</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="gradle test working">
+      <option name="closed" value="true" />
+      <created>1713790343183</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713790343183</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

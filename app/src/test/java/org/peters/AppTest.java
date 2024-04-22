@@ -13,5 +13,10 @@ class AppTest {
         String IP = host.getIP();
         assertEquals(expectedIP,IP);
     }
+
+    @Test
+    public void testMainMethod(){
+        App.main(new String[]{"www.dnsjava.org", "3.33.152.147"});
+    }
 }
 

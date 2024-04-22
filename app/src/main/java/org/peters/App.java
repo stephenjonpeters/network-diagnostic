@@ -25,15 +25,18 @@ public class App {
 
 
 public static void main(String[] args) {
-   String hostName= "www.dnsjava.org";
-   String expectedIP = "3.33.152.147";
+    System.out.println("Command-line arguments:");
+    for (String arg : args) {
+        System.out.println(arg);
+    }
+   String hostName= args[0];
+   String expectedIP = args[1];
    getMyIP();
    Host host = new Host(hostName,expectedIP);
    String ip = host.getIP();
    System.out.println(hostName);
    System.out.println(ip);
     }
-
 
 }
 
